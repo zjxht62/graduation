@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f0f0f0">
+    
+    <!-- 查看问题目录布局文件
+         搜索问题+问题目录listview
+         搜索状态选择框:lookques_state  关键字搜索：lookques_key 
+         问题目录：lookques_list -->
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/title_bar"
+    android:orientation="horizontal" >
+    
+    <Button
+        android:id="@+id/lookques_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginTop="13dp"
+        android:background="@drawable/button_back"/>
+    <Spinner
+         android:id="@+id/lookques_state"
+         android:layout_width="80dp"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="5dp"
+         android:layout_marginTop="13dp"
+         android:entries="@array/ques_state"
+         android:background="@drawable/spinner"
+         
+         />
+    <EditText 
+         android:id="@+id/lookques_key"
+         android:layout_width="match_parent"
+         android:layout_height="27dp"
+         android:hint="    请输入问题关键字"
+         android:layout_marginLeft="3dp"
+         android:layout_marginRight="5dp"
+         android:layout_marginTop="14dp"
+         android:background="@drawable/white"/>
+     </LinearLayout>
+
+    <ListView
+        android:id="@+id/lookques_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/list_line"
+        android:dividerHeight="3dip" >
+    </ListView>
+
+</LinearLayout>

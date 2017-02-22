@@ -1,0 +1,94 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* ic_launcher-web.png
+* javaLogin\
+* javaLogin\.classpath
+* javaLogin\.mymetadata
+* javaLogin\.project
+* javaLogin\.settings\
+* javaLogin\.settings\com.genuitec.eclipse.j2eedt.core.prefs
+* javaLogin\.settings\org.eclipse.jdt.core.prefs
+* javaLogin\WebRoot\
+* javaLogin\WebRoot\META-INF\
+* javaLogin\WebRoot\META-INF\MANIFEST.MF
+* javaLogin\WebRoot\WEB-INF\
+* javaLogin\WebRoot\WEB-INF\classes\
+* javaLogin\WebRoot\WEB-INF\classes\com\
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\dao\
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\dao\userDao.class
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\database\
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\database\DBUtil.class
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\implement\
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\implement\userDaoImpl.class
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\javabean\
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\javabean\User.class
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\servlet\
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\servlet\UserLogin.class
+* javaLogin\WebRoot\WEB-INF\classes\com\fit\servlet\UserRegister.class
+* javaLogin\WebRoot\WEB-INF\lib\
+* javaLogin\WebRoot\WEB-INF\lib\commons-fileupload-1.2.1.jar
+* javaLogin\WebRoot\WEB-INF\lib\commons-io-1.4.jar
+* javaLogin\WebRoot\WEB-INF\web.xml
+* javaLogin\WebRoot\index.jsp
+* javaLogin\WebRoot\mysql.jsp
+* javaLogin\src\
+* javaLogin\src\com\
+* javaLogin\src\com\fit\
+* javaLogin\src\com\fit\dao\
+* javaLogin\src\com\fit\dao\userDao.java
+* javaLogin\src\com\fit\database\
+* javaLogin\src\com\fit\database\DBUtil.java
+* javaLogin\src\com\fit\implement\
+* javaLogin\src\com\fit\implement\userDaoImpl.java
+* javaLogin\src\com\fit\javabean\
+* javaLogin\src\com\fit\javabean\User.java
+* javaLogin\src\com\fit\servlet\
+* javaLogin\src\com\fit\servlet\UserLogin.java
+* javaLogin\src\com\fit\servlet\UserRegister.java
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

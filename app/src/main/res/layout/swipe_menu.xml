@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 暂时没用 -->
+    
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/collector_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:divider="#00000000"
+         android:dividerHeight="1dp"
+         android:fadingEdge="none"
+         android:fastScrollEnabled="false"
+         android:smoothScrollbar="true">
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+    
+    <TextView 
+        android:id="@+id/collector_listview_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="listisempty"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge">
+    </TextView>
+
+</LinearLayout>

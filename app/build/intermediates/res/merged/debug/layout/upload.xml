@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+    <!-- 上传文件页面布局文件
+    上传文件主题：upload_edit  选择上传文件按钮：upload_add 提交按钮：upload_up -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="55dp"
+    	android:background="@drawable/title_upload"
+    	android:orientation="horizontal">
+    	
+    	<Button 
+    	    android:id="@+id/upload_back"
+    	    android:background="@drawable/button_back"
+    	    android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"/>
+    	
+    	
+     	<Button
+         	android:id="@+id/upload_up"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:layout_marginLeft="260dp"
+    	    android:layout_marginTop="15dp"
+        	
+         	android:text="提交"
+         	android:textSize="15dp"
+        	android:textColor="#FFFFFF"
+        	android:background="#019ec7"
+         />
+	</LinearLayout>
+
+    <EditText
+        android:id="@+id/upload_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="主题"
+        android:maxLines="3"
+        />
+    <Button
+        android:id="@+id/upload_add"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/upload_add"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:drawingCacheQuality="high"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    >
+    
+    <!-- 查看问题目录中每个list的布局文件   
+                      问题：list_question 状态按钮：list_state 详情：list_detail 删除按钮：list_delete-->
+    
+    <TextView 
+        android:id="@+id/list_question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="20.0sp"
+      
+        android:background="#ffffff"/>
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="2dp"
+        android:weightSum="3" >
+        <Button 
+            android:id="@+id/list_state"
+            android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+        	android:text="待解决"
+        	android:layout_weight="1"
+        	android:textSize="13.0sp"
+        	android:background="#ffffff"
+        	/>
+        <Button 
+            android:id="@+id/list_detail"
+            android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:text="详情"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:textSize="13.0sp"
+        	android:background="#ffffff"/>
+        <Button 
+            android:id="@+id/list_delete"
+            android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:text="删除"
+        	android:textSize="13.0sp"
+        	android:background="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>

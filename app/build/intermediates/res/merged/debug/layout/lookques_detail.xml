@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0" 
+    >
+    
+    <!-- 查看问题详细内容布局文件
+         提问人：detail_askmen 提问时间：detail_time 提问问题：detail_question 提问详细内容：detail_questiontitle
+         追问按钮：detail_zhui 追问框：detail_chase -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="55dp"
+    	android:background="@drawable/title_detail"
+    	android:orientation="horizontal">
+    	<Button 
+    	    android:id="@+id/detail_back"
+    	    android:background="@drawable/button_back"
+    	    android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"/>
+    	<Button
+    	    android:id="@+id/detail_zhui"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="追问"
+    	    android:background="#019ec7"
+    	    android:layout_marginLeft="260dp"
+    	    android:layout_marginTop="15dp"
+    	    android:textColor="#ffffff"/>
+    	    
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/detail_askmen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:text="谭吉"  
+        android:textSize="20sp"
+        android:background="#ffffff"/>
+    <TextView
+        android:id="@+id/detail_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="17dp"
+        android:text="2016-10-12" 
+        android:textColor="#a0a0a0"
+        android:textSize="13sp"
+        android:background="#ffffff"/>
+    <TextView 
+        android:id="@+id/detail_question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:text="项目上传成果物大小有限制么？" 
+        android:textSize="17sp"
+        android:background="#ffffff"/>
+    <TextView 
+        android:id="@+id/detail_questiontitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="项目上传成果物大小有限制么,最大是多少，为什么我的文件上传不上去" 
+        android:textSize="15sp"
+        android:background="#ffffff"/>
+    <EditText 
+        
+        android:id="@+id/detail_chase"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="在此添加追问内容"
+        
+        android:maxLines="3"
+        android:lines="3"
+        android:enabled="false"/>"
+
+</LinearLayout>

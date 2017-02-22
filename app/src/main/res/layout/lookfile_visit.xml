@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <!-- 查看文件中每个list的布局文件   
+                      文件图片：fileImage 文件名：file_name 上传日期：file_time 
+                      删除按钮：file_delete 下载按钮：file_download-->
+    
+    <ImageView
+        android:id="@+id/fileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/file" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fileImage"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/file_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:text="2016-11-11"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/file_download"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/file_download" />
+
+    <Button
+        android:id="@+id/file_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/no" />
+
+</RelativeLayout>

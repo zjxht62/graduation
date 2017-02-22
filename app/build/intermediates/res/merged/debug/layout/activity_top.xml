@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/title_bar"
+    android:orientation="horizontal" >
+    
+    <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="13dp"
+         android:text="PBL项目能力评价系统的研究与改善"
+         android:textSize="16dp" 
+         android:textColor="#ffffff"
+         />
+     <Button
+         android:id="@+id/btn_open1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="50dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/title_add"
+         />
+
+</LinearLayout>
